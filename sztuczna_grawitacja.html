@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Sztuczna grawitacja</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #020617;
+      color: white;
+      overflow-x: hidden;
+    }
+
+    /* tło kosmos */
+    .stars span {
+      position: absolute;
+      color: white;
+      animation: blink 2s infinite;
+    }
+
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.2; }
+    }
+
+    .planet {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      font-size: 80px;
+      animation: spin 10s linear infinite;
+    }
+
+    @keyframes spin {
+      100% { transform: rotate(360deg); }
+    }
+
+    .rocket {
+      position: absolute;
+      bottom: 20px;
+      left: 30px;
+      font-size: 40px;
+      animation: bounce 2s infinite;
+    }
+
+    @keyframes bounce {
+      0%,100% { transform: translateY(0); }
+      50% { transform: translateY(-15px); }
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: #0f172a;
+      padding: 20px;
+      margin-top: 40px;
+      border-radius: 15px;
+      border: 1px solid #0ea5e9;
+      position: relative;
+      z-index: 2;
+    }
+
+    h1 {
+      color: #38bdf8;
+      text-align: center;
+    }
+
+    h2 {
+      color: #38bdf8;
+      margin-top: 20px;
+    }
+
+    p, li {
+      color: #cbd5e1;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- GWIAZDY -->
+  <div class="stars">
+    <span style="top:50px; left:40px;">✦</span>
+    <span style="top:120px; left:200px;">✦</span>
+    <span style="top:300px; left:100px;">✦</span>
+    <span style="top:500px; left:300px;">✦</span>
+  </div>
+
+  <!-- PLANETA -->
+  <div class="planet">🪐</div>
+
+  <!-- RAKIETA -->
+  <div class="rocket">🚀</div>
+
+  <!-- TREŚĆ -->
+  <div class="container">
+
+    <h1>Sztuczna grawitacja w filmach science fiction</h1>
+
+    <h2>🌌 Wprowadzenie</h2>
+    <p>
+        Sztuczna grawitacja to pomysł z filmów science fiction, w których ludzie mogą
+      normalnie chodzić po statkach kosmicznych. W rzeczywistości w kosmosie nie ma
+      grawitacji, dlatego astronauci unoszą się w powietrzu.
+    </p>
+
+    <h2>🛰️ Jak działa sztuczna grawitacja?</h2>
+    <p>
+       Najbardziej realistyczny pomysł to obracająca się stacja kosmiczna.
+      Gdy stacja się obraca, powstaje siła, która dociska ludzi do podłogi.
+      Jest to podobne do działania karuzeli — im szybciej się kręci, tym silniej „ciągnie” na zewnątrz.
+    </p>
+
+    <h2>🎬 Przykłady</h2>
+    <ul>
+       <li>Interstellar – obracająca się stacja kosmiczna</li>
+      <li>2001: Odyseja kosmiczna – klasyczna wizja statku kosmicznego</li>
+      <li>Dead Space – futurystyczne systemy grawitacji</li>
+    </ul>
+
+    <h2>✨ Ciekawostki</h2>
+    <ul>
+      <li>Astronauci mogą urosnąć kilka centymetrów w kosmosie.</li>
+      <li>Bez grawitacji mięśnie i kości szybko słabną.</li>
+      <li>Największym problemem podróży kosmicznych jest właśnie brak grawitacji.</li>
+    </ul>
+
+
+    <h2>✅ Podsumowanie</h2>
+    <p>
+     Sztuczna grawitacja jest nadal w fazie badań, ale najbardziej realnym rozwiązaniem
+      jest ruch obrotowy statków kosmicznych. Może to w przyszłości pomóc ludziom
+      w długich podróżach kosmicznych.
+    </p>
+
+  </div>
+
+</body>
+</html>
